@@ -1,0 +1,123 @@
+:root{
+    --main-color:teal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.text-main{
+    color: var(--main-color);
+}
+@font-face {
+    font-family: allam;
+    src: url(../webfonts/Exo2-Bold.ttf);
+}
+body{
+    scroll-behavior: smooth;
+}
+#home{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/r1.webp); 
+
+}
+.logo{
+    width: 5rem;
+}
+/* .layout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+} */
+.icon{
+    width: 2rem;
+    height: 2rem;
+
+}
+.text-down{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: allam ;
+    color: rgba(0,0, 0, 0.15);
+
+}
+.text-up{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: allam ;
+}
+#about
+{   
+    background-image: url(../images/wepik-thank-you-card-with-golden-dots-202312180946532Owh.jpeg);
+}
+.client-feedback{
+    padding: 60px;
+    border: solid 5px #f1f1f1;
+}
+.client-img{
+    width:100px;
+    border: solid 2px #f4f4f4;
+    transform: translatey(  50%);
+}
+.client-feedback h6 {
+    position: relative;
+}
+.client-feedback h6::after{
+    content: "";
+    width:100px;
+    top: 100%;
+    right: 50%;
+    transform: translate(50%, -100%);
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+}
+.carousel-indicators [data-bs-slide-to]{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+}
+.carousel-indicators{
+    position: static;
+}
+.icon:hover{
+    color: #000;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: teal !important;
+}
+.card i:hover {
+    cursor: pointer;
+}
+
+.circle-icon{
+    width:3.5rem; 
+    height: 3.5rem;
+    border: 3px solid white;
+}
+.items h4::after {
+    content: "";
+    height: 3px;
+    width:5rem ; 
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+#services .text-down{
+    color: rgb(69 65 65 / 47%)
+}
+#testimonial .text-up{
+    font-size: 2.5rem;
+}
+#testimonial .text-down{
+    font-size: 4rem;
+}
