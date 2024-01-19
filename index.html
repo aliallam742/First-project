@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,10 @@
     <link rel="stylesheet" href="css/stayl.css">
 </head>
 <body>
-    <!-- <nav class="fixed-top navbar-dark">
-        <div class="logo"></div>
-        <div class="links">
-            <ul class="list-unstyled d-flex justify-content-end">
-                <li><a href="#home" class=" mx-2">Home</a></li>
-                <li><a href="#about" class="mx-2">About</a></li>
-                <li><a href="#testmonia" class=" mx-2">Testmonia</a></li>
-                <li><a href="#contact-me" class=" mx-2">Contact-Me</a></li>
-            </ul>
-        </div>
-    </nav> -->
-        <nav class="navbar navbar-expand-lg fixed-top bg-black p-0">
+    <section id="loading-spenner">
+        <span class="loader"></span>
+    </section>
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
             <div class="container-fluid">
                 <a class="navbar-brand fs-3 text-light" href="#">
                     Ali Allam
@@ -30,12 +22,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link text-white fs-5"  href="#home">Home</a>
-                    <a class="nav-link text-white fs-5"  href="#about">About</a>
-                    <a class="nav-link text-white fs-5"  href="#testimonial">Testmonial</a>
-                    <a class="nav-link text-white fs-5"  href="#courses">Courses</a>
-                    <a class="nav-link text-white fs-5"  href="#services">Services</a>
-                    <a class="nav-link text-white fs-5"  href="#contact">Contact-me</a>
+
+                    <a class="nav-link text-white fs-5"  value="#home">Home</a>
+                    <a class="nav-link text-white fs-5"  value="#about">About</a>
+                    <a class="nav-link text-white fs-5"  value="#testimonial">Testmonial</a>
+                    <a class="nav-link text-white fs-5"  value="#courses">Courses</a>
+                    <a class="nav-link text-white fs-5"  value="#services">Services</a>
+                    <a class="nav-link text-white fs-5"  value="#contact">Contact-me</a>
                 </div>
                 </div>
             </div>
@@ -65,6 +58,7 @@
             <a href="#" class="text-white">View PORTOFLIO</a>
         </div>
     </header>
+
     <Section id="about" class="py-5">
         <div class="about-text text-center ">
             <div class="position-relative d-flex align-items-center justify-content-center">
@@ -88,13 +82,14 @@
     </Section>
 
     <section id="testimonial">
+        <div class="position-relative d-flex align-items-center justify-content-center py-3">
+            <h2 class="text-down ">TESTIMONIAL</h2>
+            <h3 class="position-absolute text-up ">TESTIMONIAL</h3>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-inner overflow-visible text-center">
                 <div class="carousel-item active">
-                    <div class="position-relative d-flex align-items-center justify-content-center py-3">
-                        <h2 class="text-down ">TESTIMONIAL</h2>
-                        <h3 class="position-absolute text-up ">TESTIMONIAL</h3>
-                    </div>
+
                     <div class="container">
                         <img src="images/team-bw-3.jpg" class="client-img rounded-circle shadow-lg" alt="">
                         <div class="client-feedback">
@@ -132,6 +127,7 @@
             </div>
         </div>
     </section>
+
     <section id="courses" class="py-5">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h2 class="text-down">COURSES</h2>
@@ -151,7 +147,7 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                     <div class="container-fluid">
-                        <div class="row">
+                        <div class="row p-0 m-0">
                             <div class="col-md-3">
                                 <div class="card">
                                     <img src="images/p4.PNG" class="card-img-top" alt="js">
@@ -281,6 +277,7 @@
                 </div>
             </div>
     </section>
+
     <section id="services" class="bg-dark py-3">
         <div class="position-relative d-flex align-items-center justify-content-center my-4 py-3">
             <h2 class="text-down ">SERVICES</h2>
@@ -354,6 +351,7 @@
             </div>
         </div>
     </section>
+
     <footer id="contact" class="text-center bg-dark p-5 mt-3 ">
         <div class="social-icon d-flex my-3 text-light justify-content-center">
             <div class="icon border border-2 mx-1 border-white rounded-circle d-flex align-items-center justify-content-center p-3">
@@ -377,7 +375,12 @@
         <ul>
             <li></li>
         </ul>
-    </footer>
+    </footer> 
+    <div class="btnUp" >
+        </a><i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

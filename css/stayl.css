@@ -1,9 +1,13 @@
 :root{
     --main-color:teal;
+
 }
 *{
     padding: 0;
     margin: 0;
+}
+body{
+    overflow: hidden;
 }
 .text-main{
     color: var(--main-color);
@@ -12,18 +16,32 @@
     font-family: allam;
     src: url(../webfonts/Exo2-Bold.ttf);
 }
-body{
-    scroll-behavior: smooth;
+.navbar{
+    transition: background-color 2s , padding 2s;
 }
 #home{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/r1.webp); 
-
 }
 .logo{
     width: 5rem;
+}
+.btnUp{
+    width: 40px;
+    height: 40px;
+    background-color: #bcb8b8;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px  #00000084;
+    display: none;
 }
 /* .layout{
     position: absolute;
@@ -33,6 +51,18 @@ body{
     bottom: 0;
     background-color: rgba(0, 0, 0, .6);
 } */
+#loading-spenner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #263038;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .icon{
     width: 2rem;
     height: 2rem;
@@ -50,10 +80,10 @@ body{
     font-weight: bolder;
     font-family: allam ;
 }
-#about
-{   
+/* #about
+/* {   
     background-image: url(../images/wepik-thank-you-card-with-golden-dots-202312180946532Owh.jpeg);
-}
+} */ 
 .client-feedback{
     padding: 60px;
     border: solid 5px #f1f1f1;
@@ -121,3 +151,50 @@ body{
 #testimonial .text-down{
     font-size: 4rem;
 }
+.navbar-toggler{
+    background-color: #FFF !important;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+  }
+  .loader::before , .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite ;
+  }
+  .loader::after{
+    inset: 8px;
+    transform: rotate3d(90, 90, 0, 180deg );
+    border-color: #FF3D00;
+  }
+
+  @keyframes rotate {
+    0%   {transform: rotate(0deg)}
+    100%   {transform: rotate(360deg)}
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      75%, 100%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+  }
+
+@media screen and (max-width:500px) {
+    .navbar-collapse{
+        background-color: #212529;
+        width: 100% !important;
+    } 
+    .container-fluid{
+        padding: 0 !important;
+    }
+}
+
