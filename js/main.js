@@ -1,3 +1,5 @@
+
+$(document).ready(function(){
 $(window).scroll(function () { 
     let windowScroll =  $(window).scrollTop()
     if(windowScroll >= ($("#about").offset().top)-80){
@@ -19,7 +21,7 @@ $(".nav-link").click(function(e){
 $(".btnUp").click(function (){
     $("html,body").animate({scrollTop:0},1000)
 })
-$(document).ready(function(){
+
     $("#loading-spenner .loader").fadeOut(1000,function(){
         $("#loading-spenner").fadeOut(1000,function(){
             $("#loading-spenner").remove();
