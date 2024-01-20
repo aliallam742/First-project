@@ -258,4 +258,11 @@ background-color: orange;
     .container-fluid{
         padding: 0 !important;
     }
+    .text-down{
+        display: none !important;
+    }
+    .teext {
+        margin: 40px 0;
+
+    }
 }
