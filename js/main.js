@@ -29,4 +29,18 @@ $(".btnUp").click(function (){
         $('body').css({'overflow' : 'auto'})
 
     })
+
+    $(".side-bar i").click(function (){
+        $(".side-bar").toggleClass("active")
+        
+    })
+    $(".box-color").click(function(e){
+        let colorB = $(e.target).css("background-color");
+        console.log(colorB);
+        $(".change").css("color" , colorB)
+    })
+    $(".box-img img").click(function(e){
+    let imgSrc  =  $(e.target).attr("src");
+    $("#home").css("backgroundImage", `url(${imgSrc})`)
+    })
 })

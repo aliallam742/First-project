@@ -177,7 +177,67 @@ body{
     border-color: #FF3D00;
 }
 
+.side-bar{
+    position: fixed;
+    top: 150px;
+    left: 0;
+    z-index: 999999;
+    color: #FFF;
+    display: flex;
+    align-items: flex-start;
+    transform: translateX(-91%);
+    transition: transform 2s;
+}
+.active{
+    transform: translateX(0);
+}
+.side-bar i {
+    padding: 10px;
+    background-color: #333;
+    font-size: 20px;
+    cursor: pointer;
+}
+.side-bar .box{
+padding: 15px;
+color: #333;
+background-color: #aaa5a5;
+border: solid 4px #333;
 
+}
+.box-color {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+}
+.box-img {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+border-radius: 50%;
+    background-color: #FFF;
+    display: inline-block;
+    cursor: pointer;
+}
+.red{
+background-color: #FF3D00;
+}
+.orange{
+background-color: orange;
+}
+.primary{
+    background-color: olivedrab;
+}
+.masterd{
+    background-color: mediumseagreen;
+}
+.green{
+    background-color: maroon;
+}
+.blue{
+    background-color: teal;
+}
 @keyframes rotate {
     0%   {transform: rotate(0deg)}
     100%   {transform: rotate(360deg)}
